@@ -1,0 +1,57 @@
+[netsh]
+TCP Window Auto-Tuning=3
+Congestion Control Provider=1
+TCP Chimney Offload=2
+Receive-Side Scaling State=1
+EnableDCA=2
+EnableTCPA=2
+ECN Capability=2
+Windows Scaling heuristics=2
+[SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+DefaultTTL=-1
+Tcp1323Opts=-1
+DisableTaskOffload=-1
+DisableTaskOffload_SEL=0
+SynAttackProtect=-1
+SynAttackProtect_SEL=0
+TCPMaxDataRetransmissions=-1
+MaxUserPort=-1
+TcpTimedWaitDelay=-1
+[SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_MAXCONNECTIONSPERSERVER]
+explorer.exe=2
+[SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_MAXCONNECTIONSPER1_0SERVER]
+explorer.exe=4
+[SYSTEM\CurrentControlSet\Services\Tcpip\ServiceProvider]
+LocalPriority=499
+HostsPriority=500
+DnsPriority=2000
+NetbtPriority=2001
+[SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+LargeSystemCache=0
+LargeSystemCache_SEL=0
+[SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
+Size=1
+Size_SEL=1
+[SOFTWARE\Policies\Microsoft\Windows\Psched]
+NonBestEffortLimit=-2
+[SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
+NegativeCacheTime=-1
+NetFailureCacheTime=-1
+NegativeSOACacheTime=-1
+[SOFTWARE\Microsoft\MSMQ\Parameters]
+TCPNoDelay=-2
+TCPNoDelay_SEL=0
+[Ethernet]
+MTU=1500
+[SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\{2A9A0C32-8F7F-4C35-89B3-99F4C5ED97C0}]
+TcpAckFrequency=-1
+TcpAckFrequency_SEL=0
+TcpDelAckTicks=-1
+TcpDelAckTicks_SEL=0
+[Wi-Fi]
+MTU=1500
+[SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\{AB7078AE-1453-4688-9E9E-721A2BA7D0B8}]
+TcpAckFrequency=-1
+TcpAckFrequency_SEL=0
+TcpDelAckTicks=-1
+TcpDelAckTicks_SEL=0
